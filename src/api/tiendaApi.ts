@@ -16,7 +16,7 @@ const CATALOGO: Producto[] = [
     proveedor: { nombre: 'Aseo del Sur', contacto: { telefono: '3115550004', ciudad: 'Neiva' } } },
 ];
 
-// Simula la latencia de la red. 'termino' filtra por nombre.
+// Simula la latencia de la red. 'termino' filtra por nombre
 export function getProductos(termino = ''): Promise<Producto[]> {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
